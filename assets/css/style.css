@@ -5,47 +5,97 @@
 
 body{
     font-family: myFont;
+    background-image: url("assets/images/background.png")
 }
-
 
 #container{
     max-width: 960px;
     margin: 0 auto;
 }
 
+#links{
+    margin-top: 20px;
+    float:right
+}
+
 #banner{
     height: 150px;
     margin: 0 auto;
     display: flex;
-    align-content: center
+    align-content: center;
+    clear: both;
 }
 
-/* #projects-holder{
-    
-} */
+.icon{
+    width: 50px;
+    float: right;
+    padding: 10px;
+
+}
+
+.icon:hover{
+    box-shadow: 2px 2px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 18px;
+}
+
+#mattrubbelke-pic{
+    float: left;
+    width: 200px;
+    padding-right: 30px;
+    border-radius: 50px
+}
+
+#projects-title{
+    margin: 10px auto;
+    width: 500px;
+    clear: both;
+}
+
+#projects-holder{
+    clear: both;
+    margin-top: -40px; 
+}
 
 .project{
-    width: 25%;
     float: left;
     margin-right: 25px;
-    margin-top: 20px;
-    
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
 }
 
 .project-image{
-    width: 150px;
-    
+    width: 275px;
 }
 
 .descript{
-    text-align: left;
+    text-align: center;
+    font-size: 26px;
+}
+
+#button-holder{
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 form{
     display: none;
+    margin: 300px;
+}
+
+#button-holder{
+    margin: 0 auto;
+    
 }
 
 #contact{
-    margin: 0 auto;
-    display: flex;
+    float: right;
+    margin: 10px;
 }

@@ -12,23 +12,80 @@
     
     <div id="container">
 
+        <div id="links">
+            <!-- Social Icon -->
+            <a href="https://www.linkedin.com/in/matthew-rubbelke/" target="_blank"><img src="assets/images/linkedin-icon.png" class="icon"></a>
+            <a href="https://github.com/MattRubbelke" target="_blank"><img src="assets/images/github.png" class="icon"></a>
+            <a href="assets/Matt Rubbelke Resume.pdf" target="_blank"><button id="contact" class="btn btn-dark">Resume</button></a>
+            <div class="text-center" id="contact">
+                    <a href="" class="btn btn-dark btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Let's work together!</a>
+                  </div>
+        
+        <!-- Contact Modal -->
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Contact me!</h4>
+                <button type="button" id="contact" class="close btn btn-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="form34" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                </div>
+
+                <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="form29" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                </div>
+
+                <div class="md-form mb-5">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form32" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                </div>
+
+                <div class="md-form">
+                <i class="fas fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-unique">Send<i class="fas fa-paper-plane-o ml-1"></i></button>
+            </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+
+
         <!-- Main Image -->
         <img src="assets/images/banner.png" id="banner" alt="Matthew Rubbelke, the Coding Paralegal">
-        
+
         <!-- Intro text -->
         <div id="intro">
             <h1>Hey! I'm Matthew!</h1>
-            <p>Tired of working with developers who don't understand the intricacies of a law landscape? Let's chat. I've been working full-time in the legal industry for 3 years. My work experience ranges from larger international powerhouses to small yet mighty firms.</p>
+            <img src="assets/images/Profile.jpg" id="mattrubbelke-pic" alt="Picture of Matthew Rubbelke">
+            <p>Tired of working with developers who don't understand the intricacies of the legal landscape? Let's chat. I've been working full-time in the legal industry for 3 years. My work experience ranges from larger international powerhouses to small yet mighty firms.</p>
             <p>Currently, I work as a Patent Paralegal at a botique patent law firm in Bloomington, MN. In addition to providing excellent service for my clients, I optimize our intellectual property management system and manages various initiatives to increase our firm’s productivity</p>
         </div>
             
+        <img src="assets/images/projects.png" id="projects-title">
 
-        <div id="projects-holder">
-            <h2>Projects</h2>
+        <div id="projects-holder" class="row">
             
             <!-- Eventide -->
-            <div class="project">
-                <h4>Eventide</h3>
+            <div class="project" class="col">
+                <h3>Eventide</h3>
                 <img src="assets/images/eventide_logo.png" class="project-image">
                 <div class="descript">
                     <a href="https://github.com/MattRubbelke/Eventide" target="_blank">Github</a> 
@@ -38,8 +95,8 @@
             </div>
             
             <!-- Tommy's Gif App -->
-            <div class="project">
-                <h4>Tommy's Gif App</h3>
+            <div class="project" class="col">
+                <h3>Tommy's Gif App</h3>
                 <img src="assets/images/giphy.jpg" class="project-image">
                 <div class="descript">
                     <a href="https://github.com/MattRubbelke/GifTastic" target="_blank">Github</a> 
@@ -49,16 +106,18 @@
             </div>
 
             <!-- Train Scheduler -->
-            <div class="project">
-                <h4>Train Scheduler</h3>
+            <div class="project" class="col">
+                <h3>Train Scheduler</h3>
                 <img src="assets/images/train.png" class="project-image">
                 <div class="descript">
                     <a href="https://github.com/MattRubbelke/train-scheduler" target="_blank">Github</a> 
                     <br>
                     <a href="https://mattrubbelke.github.io/train-scheduler/" target="_blank">Deployed Version</a>
                 </div>
-            </div>
-        <button id="contact" class="btn btn-dark" style="clear:both;">Have a problem that needs to be solved? Let's chat!</button>
+        </div>
+        <div style="clear:both;" id="button-holder">
+            
+        </div>
         <form>
             <div class="form-group">
                 <label for="Name">Name</label>
