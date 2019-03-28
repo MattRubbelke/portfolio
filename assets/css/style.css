@@ -73,6 +73,7 @@ p{
 
 .project-image{
     width: 275px;
+    height: 300px;
 }
 
 .descript{
@@ -98,4 +99,23 @@ form{
 #contact{
     float: right;
     margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #container{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    #projects-holder{
+        clear: both;
+        margin-top: 0 auto; 
+    }
+
+    .project{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
 }
