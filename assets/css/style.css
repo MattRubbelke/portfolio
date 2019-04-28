@@ -60,7 +60,8 @@ p{
 
 #projects-holder{
     clear: both;
-    margin-top: -40px; 
+    margin-top: -40px;
+    margin: 0 auto; 
 }
 
 .project{
@@ -82,11 +83,6 @@ p{
 #button-holder{
     margin-top: 30px;
     margin-bottom: 100px;
-}
-
-form{
-    display: none;
-    margin: 300px;
 }
 
 #button-holder{
